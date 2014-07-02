@@ -1,0 +1,7 @@
+.idea/
+doc/
+libs/*/src/
+out/
+
+*.iml
+thumbs.db
