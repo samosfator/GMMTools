@@ -95,7 +95,7 @@ public class RectSizeSetter {
 
     private void hide() {
         squareSet.setFocusable(false);
-        TranslucentPane.setVisible(false);
+        SwingUtilities.getWindowAncestor(squareSet).setVisible(false);
         Robot r = null;
         try {
             r = new Robot();
