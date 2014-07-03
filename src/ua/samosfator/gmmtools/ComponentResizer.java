@@ -10,7 +10,7 @@ import javax.swing.SwingUtilities;
  * The ComponentResizer allows you to resize a component by dragging a border
  * of the component.
  */
-class ComponentResizer extends MouseAdapter {
+public class ComponentResizer extends MouseAdapter {
     private final static Dimension MINIMUM_SIZE = new Dimension(10, 10);
     private final static Dimension MAXIMUM_SIZE =
             new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE);

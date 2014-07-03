@@ -1,6 +1,7 @@
 .idea/
 doc/
 libs/*/src/
+META-INF/
 out/
 
 *.iml
