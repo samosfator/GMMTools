@@ -2,4 +2,10 @@
 
 #### [Download](https://github.com/samosfator/GMMTools/releases)
 
-![HOWTO](http://i.imgur.com/i5xCNIL.gif)
+###### Worked with:
+* Spring (JButton, JDialog, etc.)
+* AWT (Robot, KeyListeners)
+
+#### Demo
+![Screenshot](http://i.imgur.com/909HouH.png)
+![HOWTO](http://i.imgur.com/Z6qUK2T.gif)
