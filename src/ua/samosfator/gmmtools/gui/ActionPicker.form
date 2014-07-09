@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ua.samosfator.gmmtools.ActionPicker">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ua.samosfator.gmmtools.gui.ActionPicker">
   <grid id="27dc6" binding="MainWindow" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
@@ -99,11 +99,14 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <background color="-1"/>
+                  <fixedCellHeight value="20"/>
+                  <inheritsPopupMenu value="false"/>
                   <model>
-                    <item value="Будинок на вул. Б. Хмельницького"/>
-                    <item value="Багатоповерхівка на Чорновола"/>
-                    <item value="Газон на Сагайдачного"/>
+                    <item value="  Example primary building"/>
+                    <item value="  10x20m lawn"/>
                   </model>
+                  <selectionMode value="0"/>
                 </properties>
               </component>
               <component id="f4593" class="javax.swing.JButton" binding="startDrawingButton" default-binding="true">

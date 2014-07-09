@@ -1,5 +1,7 @@
 package ua.samosfator.gmmtools;
 
+import ua.samosfator.gmmtools.gui.ActionPicker;
+
 import javax.swing.*;
 
 public class Main {

@@ -1,14 +1,13 @@
-package ua.samosfator.gmmtools;
+package ua.samosfator.gmmtools.gui;
+
+import ua.samosfator.gmmtools.shapes.ApproximateDrawing;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
 
 public class ActionPicker {
     private JPanel MainWindow;
@@ -46,8 +45,9 @@ public class ActionPicker {
 
         aboutTextPane.setBackground(UIManager.getColor("TabbedPane.background"));
         aboutTextPane.setHighlighter(null);
+        savedItemsList.setBorder(new EmptyBorder(2, 10, 0, 0));
 
-        //Center text
+        // Center text in JTextPane
         StyledDocument doc = aboutTextPane.getStyledDocument();
         SimpleAttributeSet center = new SimpleAttributeSet();
         StyleConstants.setAlignment(center, StyleConstants.ALIGN_CENTER);

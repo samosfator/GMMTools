@@ -1,5 +1,8 @@
-package ua.samosfator.gmmtools;
+package ua.samosfator.gmmtools.gui;
 
+import ua.samosfator.gmmtools.ComponentMover;
+import ua.samosfator.gmmtools.ComponentResizer;
+import ua.samosfator.gmmtools.Screen;
 import ua.samosfator.gmmtools.shapes.Rectangle;
 
 import javax.swing.*;

@@ -1,10 +1,12 @@
-package ua.samosfator.gmmtools;
+package ua.samosfator.gmmtools.shapes;
 
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.PrecisionModel;
 import com.vividsolutions.jts.simplify.DouglasPeuckerSimplifier;
+import ua.samosfator.gmmtools.gui.ActionPicker;
+import ua.samosfator.gmmtools.Screen;
 
 import javax.swing.*;
 import java.awt.*;
