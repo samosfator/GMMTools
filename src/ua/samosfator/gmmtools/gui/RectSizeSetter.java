@@ -1,7 +1,7 @@
 package ua.samosfator.gmmtools.gui;
 
-import ua.samosfator.gmmtools.ComponentMover;
-import ua.samosfator.gmmtools.ComponentResizer;
+import com.wordpress.tips4java.ComponentMover;
+import com.wordpress.tips4java.ComponentResizer;
 import ua.samosfator.gmmtools.Screen;
 import ua.samosfator.gmmtools.shapes.Rectangle;
 
