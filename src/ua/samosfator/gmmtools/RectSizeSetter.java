@@ -37,14 +37,12 @@ public class RectSizeSetter {
                 squareSet.setBackground(new Color(1, 1, 1, (float) 0.3));
                 squareSet.setFocusable(true);
 
-
                 ComponentMover cm = new ComponentMover();
                 cm.registerComponent(squareSet);
                 ComponentResizer cr = new ComponentResizer();
                 cr.setSnapSize(new Dimension(1, 1));
                 cm.setDragInsets(cr.getDragInsets());
                 cr.registerComponent(squareSet);
-
 
                 frame.pack();
                 frame.setLocationRelativeTo(null);

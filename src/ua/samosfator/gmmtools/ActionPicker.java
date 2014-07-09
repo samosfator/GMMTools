@@ -7,6 +7,8 @@ import javax.swing.text.StyledDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 
 public class ActionPicker {
     private JPanel MainWindow;
@@ -14,34 +16,36 @@ public class ActionPicker {
     private JButton circleButton;
     private JPanel aboutPanel;
     private JTabbedPane tabbedPane;
-    private JTextPane howto;
     private JTextPane aboutTextPane;
     private JPanel selectShapePane;
+    private JButton approxButton;
+    private JButton addOutlineTemplateButton;
+    private JList savedItemsList;
+    private JButton startDrawingButton;
 
     public ActionPicker() {
-        rectangleButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Window mainWindow = SwingUtilities.windowForComponent((Component) e.getSource());
-                mainWindow.setVisible(false);
-                try {
-                    RectSizeSetter rss = new RectSizeSetter();
-                } catch (Exception ignored) {}
-            }
+        rectangleButton.addActionListener(e -> {
+            Window mainWindow = SwingUtilities.windowForComponent((Component) e.getSource());
+            mainWindow.setVisible(false);
+            try {
+                RectSizeSetter rss = new RectSizeSetter();
+            } catch (Exception ignored) {}
+        });
+        approxButton.addActionListener(e -> {
+            Window mainWindow = SwingUtilities.windowForComponent((Component) e.getSource());
+            mainWindow.setVisible(false);
+            try {
+                ApproximateDrawing ad = new ApproximateDrawing();
+                ad.start();
+            } catch (Exception ignored) {}
         });
         rectangleButton.setIcon(new ImageIcon("img\\rectangle.png"));
         circleButton.setIcon(new ImageIcon("img\\circle.png"));
+        approxButton.setIcon(new ImageIcon("img\\approx.png"));
         circleButton.setEnabled(false);
-
-        howto.setBackground(UIManager.getColor("TabbedPane.background"));
-        howto.setHighlighter(null);
 
         aboutTextPane.setBackground(UIManager.getColor("TabbedPane.background"));
         aboutTextPane.setHighlighter(null);
-
-        tabbedPane.setFocusable(false);
-        aboutPanel.setFocusable(false);
-        rectangleButton.setFocusable(false);
 
         //Center text
         StyledDocument doc = aboutTextPane.getStyledDocument();
@@ -59,10 +63,11 @@ public class ActionPicker {
         ImageIcon img = new ImageIcon("img\\icon.png");
         mainFrame.setIconImage(img.getImage());
         mainFrame.setTitle("GMM Tools");
+        mainFrame.setResizable(false);
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         mainFrame.setMinimumSize(new Dimension(200, 300));
-        mainFrame.setLocationRelativeTo(null);
         mainFrame.pack();
+        mainFrame.setLocationRelativeTo(null);
         mainFrame.setVisible(true);
     }
 }
