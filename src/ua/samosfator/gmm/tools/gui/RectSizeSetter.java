@@ -1,9 +1,9 @@
-package ua.samosfator.gmmtools.gui;
+package ua.samosfator.gmm.tools.gui;
 
 import com.wordpress.tips4java.ComponentMover;
 import com.wordpress.tips4java.ComponentResizer;
-import ua.samosfator.gmmtools.Screen;
-import ua.samosfator.gmmtools.shapes.Rectangle;
+import ua.samosfator.gmm.tools.Screen;
+import ua.samosfator.gmm.tools.shapes.Rectangle;
 
 import javax.swing.*;
 import javax.swing.border.Border;

@@ -5,4 +5,7 @@ META-INF/
 out/
 
 *.iml
+*-doc.jar
+*-javadoc.jar
+*-sources.jar
 thumbs.db

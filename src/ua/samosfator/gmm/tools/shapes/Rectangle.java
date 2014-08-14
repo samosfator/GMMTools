@@ -1,7 +1,7 @@
-package ua.samosfator.gmmtools.shapes;
+package ua.samosfator.gmm.tools.shapes;
 
-import ua.samosfator.gmmtools.gui.ActionPicker;
-import ua.samosfator.gmmtools.gui.RectSizeSetter;
+import ua.samosfator.gmm.tools.gui.ActionPicker;
+import ua.samosfator.gmm.tools.gui.RectSizeSetter;
 
 import java.awt.*;
 import java.awt.event.InputEvent;

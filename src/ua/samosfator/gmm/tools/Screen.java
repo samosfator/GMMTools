@@ -1,4 +1,4 @@
-package ua.samosfator.gmmtools;
+package ua.samosfator.gmm.tools;
 
 import java.awt.*;
 
